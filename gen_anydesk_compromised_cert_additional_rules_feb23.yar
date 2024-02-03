@@ -2,7 +2,7 @@
 
 Original Ruleset by Florian Roth: https://github.com/Neo23x0/signature-base/blob/master/yara/gen_anydesk_compromised_cert_feb23.yar
 
-His ruleset covered 396 out of 421 malicious files with the AnyDesk certificate, missing 25 malicious files. The ruleset generated 0 false positives on the 560 legitimate AnyDesk files that we know have been generated.
+His ruleset covered 396 out of 421 malicious files with the AnyDesk certificate, missing 25 malicious files. The ruleset generated 0 false positives on the 560 legitimate AnyDesk files that we know.
 
 I created two new rules based on the ones by Florian Roth to get broader coverage of already known malware that is appending the AnyDesk certificate by two different approaches:
 
