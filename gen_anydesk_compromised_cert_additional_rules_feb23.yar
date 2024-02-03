@@ -37,7 +37,7 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_Linker_Version {
 
 rule SUSP_AnyDesk_Compromised_Certificate_Jan24_Build_String {
    meta:
-      description = "Detects binaries signed with a potentially compromised signing certificate of AnyDesk and binaries where that certificate was appended. Files that include the String Buildbot\ad-windows-32 will not be detected (the string is included in legitimate AnyDesk files)"
+      description = "Detects binaries signed with a potentially compromised signing certificate of AnyDesk and binaries where that certificate was appended. Files that include the String Buildbot\\ad-windows-32 will not be detected (the string is included in legitimate AnyDesk files)"
       date = "2024-02-03"
       author = "Maik Morgenstern"
       reference = "https://download.anydesk.com/changelog.txt"
