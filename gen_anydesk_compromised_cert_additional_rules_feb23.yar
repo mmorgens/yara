@@ -25,7 +25,6 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_Linker_Version {
       date = "2024-02-03"
       author = "Maik Morgenstern"
       reference = "https://download.anydesk.com/changelog.txt"
-      score = 75
    condition:
       uint16(0) == 0x5a4d and
       for any i in (0 .. pe.number_of_signatures) : (
@@ -41,7 +40,6 @@ rule SUSP_AnyDesk_Compromised_Certificate_Jan24_Build_String {
       date = "2024-02-03"
       author = "Maik Morgenstern"
       reference = "https://download.anydesk.com/changelog.txt"
-      score = 75
    strings:
     $a1 = "Buildbot\\ad-windows-32"
    condition:
